@@ -28,7 +28,8 @@ public class Triangle implements Shape{
 
     @Override
     public boolean equals(Object o){
-        if(o instanceof Triangle t){
+        if(o instanceof Triangle){
+            Triangle t = (Triangle)o;
             return t.vertexA.equals(this.vertexA) &&
                     t.vertexB.equals(this.vertexB) &&
                     t.vertexC.equals(this.vertexC);

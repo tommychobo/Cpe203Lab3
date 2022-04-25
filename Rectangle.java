@@ -33,7 +33,8 @@ public class Rectangle implements Shape{
     @Override
     public boolean equals(Object o){
         double delta = 0.000001;
-        if(o instanceof Rectangle r){
+        if(o instanceof Rectangle){
+            Rectangle r = (Rectangle)o;
             return Math.abs(r.width - this.width) < delta &&
                     Math.abs(r.height - this.height) < delta &&
                     r.topLeft.equals(this.topLeft) &&

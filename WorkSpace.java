@@ -20,8 +20,8 @@ public class WorkSpace {
     public List<Circle> getCircles(){
         List<Circle> circles = new ArrayList<>();
         for(Shape s : shapes){
-            if(s instanceof Circle c){
-                circles.add(c);
+            if(s instanceof Circle){
+                circles.add((Circle)s);
             }
         }
         return circles;
@@ -30,8 +30,8 @@ public class WorkSpace {
     public List<Rectangle> getRectangles(){
         List<Rectangle> rectangles = new ArrayList<>();
         for(Shape s : shapes){
-            if(s instanceof Rectangle r){
-                rectangles.add(r);
+            if(s instanceof Rectangle){
+                rectangles.add((Rectangle)s);
             }
         }
         return rectangles;
@@ -40,8 +40,8 @@ public class WorkSpace {
     public List<Triangle> getTriangles(){
         List<Triangle> triangles = new ArrayList<>();
         for(Shape s : shapes){
-            if(s instanceof Triangle t){
-                triangles.add(t);
+            if(s instanceof Triangle){
+                triangles.add((Triangle)s);
             }
         }
         return triangles;

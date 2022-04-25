@@ -25,7 +25,8 @@ public class Circle implements Shape{
     @Override
     public boolean equals(Object o){
         double delta = 0.000001;
-        if(o instanceof Circle c) {
+        if(o instanceof Circle) {
+            Circle c = (Circle)o;
             return c.center.equals(this.center) && Math.abs(c.radius - this.radius) < delta
                     && c.color.equals(this.color);
         }
